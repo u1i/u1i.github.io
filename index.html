@@ -4,51 +4,353 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <meta name="description" content="Uli Hitzel – AI technologist and ecosystem builder working at the intersection of artificial intelligence, business transformation, and human creativity.">
+    <meta name="author" content="Uli Hitzel">
+    <meta name="keywords" content="Uli Hitzel, AI, artificial intelligence, business transformation, ecosystem builder, Singapore">
+
+    <meta property="og:title" content="Uli Hitzel">
+    <meta property="og:description" content="AI technologist and ecosystem builder working at the intersection of artificial intelligence, business transformation, and human creativity.">
+    <meta property="og:image" content="https://uli.hitzel.net/uli.jpg">
+    <meta property="og:url" content="https://uli.hitzel.net">
+    <meta property="og:type" content="profile">
 
     <title>Uli Hitzel</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="bootstrap.min.css" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Uli Hitzel",
+      "description": "AI technologist and ecosystem builder working at the intersection of artificial intelligence, business transformation, and human creativity.",
+      "jobTitle": [
+        "Consultancy Lead",
+        "Founder",
+        "Fellow",
+        "Author"
+      ],
+      "worksFor": [
+        {
+          "@type": "Organization",
+          "name": "naida"
+        },
+        {
+          "@type": "Organization",
+          "name": "Electric Minds"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "National University of Singapore"
+        }
+      ],
+      "alumniOf": [
+        {
+          "@type": "Organization",
+          "name": "The HEINEKEN Company"
+        },
+        {
+          "@type": "Organization",
+          "name": "Dyson"
+        },
+        {
+          "@type": "Organization",
+          "name": "Yahoo"
+        },
+        {
+          "@type": "Organization",
+          "name": "Microsoft"
+        },
+        {
+          "@type": "Organization",
+          "name": "IBM"
+        },
+        {
+          "@type": "Organization",
+          "name": "Red Hat"
+        },
+        {
+          "@type": "Organization",
+          "name": "Raffles Medical Group"
+        }
+      ],
+      "homeLocation": {
+        "@type": "Place",
+        "name": "Singapore"
+      },
+      "knowsAbout": [
+        "Artificial Intelligence",
+        "Business Transformation",
+        "DevOps",
+        "Manufacturing Innovation"
+      ],
+      "sameAs": [
+        "https://www.linkedin.com/in/uhitzel/"
+      ]
+    }
+    </script>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <style>
+      /* ── Reset & Base ─────────────────────────────────── */
+      *, *::before, *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
 
-    <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
+      body {
+        font-family: "Times New Roman", "Noto Serif", Georgia, serif;
+        background: #fff;
+        color: #222;
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+      }
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+      a {
+        color: #1a0dab;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* ── Layout ────────────────────────────────────────── */
+      .page {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 48px 24px 80px;
+      }
+
+      /* ── Header / Profile ──────────────────────────────── */
+      .profile {
+        display: flex;
+        align-items: flex-start;
+        gap: 28px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #dadce0;
+      }
+
+      .profile-photo {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+        flex-shrink: 0;
+      }
+
+      .profile-info h1 {
+        font-size: 22px;
+        font-weight: normal;
+        color: #1a0dab;
+        margin-bottom: 2px;
+      }
+
+      .profile-info .titles {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 6px;
+      }
+
+      .profile-info .affiliations {
+        font-size: 13px;
+        color: #777;
+      }
+
+      .profile-info .affiliations span {
+        display: inline;
+      }
+
+      .profile-info .affiliations span + span::before {
+        content: " · ";
+        color: #aaa;
+      }
+
+      /* ── Bio ───────────────────────────────────────────── */
+      .section {
+        padding: 20px 0;
+        border-bottom: 1px solid #dadce0;
+      }
+
+      .section:last-child {
+        border-bottom: none;
+      }
+
+      .section-label {
+        font-size: 11px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.8px;
+        color: #5f6368;
+        margin-bottom: 8px;
+      }
+
+      .bio {
+        font-size: 15px;
+        color: #333;
+      }
+
+      /* ── Areas / Tags ──────────────────────────────────── */
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .tag {
+        font-size: 13px;
+        color: #1a0dab;
+        border: 1px solid #dadce0;
+        border-radius: 16px;
+        padding: 4px 14px;
+        background: #f8f9fa;
+        transition: background 0.15s;
+      }
+
+      .tag:hover {
+        background: #e8f0fe;
+        text-decoration: none;
+      }
+
+      /* ── Experience list ────────────────────────────────── */
+      .org-list {
+        font-size: 14px;
+        color: #333;
+        list-style: none;
+      }
+
+      .org-list li {
+        display: inline;
+      }
+
+      .org-list li + li::before {
+        content: " · ";
+        color: #aaa;
+      }
+
+      /* ── Links ──────────────────────────────────────────── */
+      .links {
+        display: flex;
+        gap: 20px;
+        font-size: 14px;
+      }
+
+      .links a {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+      }
+
+      .links a svg {
+        width: 16px;
+        height: 16px;
+        fill: #5f6368;
+        flex-shrink: 0;
+      }
+
+      /* ── Footer ─────────────────────────────────────────── */
+      .footer {
+        padding-top: 20px;
+        font-size: 12px;
+        color: #999;
+        text-align: center;
+      }
+
+      /* ── Responsive ──────────────────────────────────── */
+      @media (max-width: 520px) {
+        .profile {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+
+        .profile-info .affiliations {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+        }
+
+        .profile-info .affiliations span + span::before {
+          content: "";
+        }
+
+        .links {
+          justify-content: center;
+        }
+
+        .tags {
+          justify-content: center;
+        }
+      }
+    </style>
   </head>
 
   <body>
+    <main class="page">
 
-    <div class="container">
+      <!-- Profile header -->
+      <header class="profile">
+        <img src="uli.jpg" alt="Uli Hitzel" class="profile-photo">
+        <div class="profile-info">
+          <h1>Uli Hitzel</h1>
+          <div class="titles">Consultancy Lead · Founder · Fellow · Author</div>
+          <div class="affiliations">
+            <span>naida</span>
+            <span>Electric Minds</span>
+            <span>National University of Singapore</span>
+          </div>
+        </div>
+      </header>
 
-      <div class="starter-template">
-        <h1>Hello!</h1>
-        <p class="lead">There's not a lot here at this point.</p>
-        <a href="https://linkedin.com/in/uhitzel" class="btn btn-primary btn-large">Check me out on LinkedIn</a>
-        <br>&nbsp;<br>
-        <br>&nbsp;<br>
-        <a href="https://apigeek.net" class="btn btn-primary btn-large">My portfolio is here</a>
+      <!-- Bio -->
+      <section class="section">
+        <div class="section-label">About</div>
+        <p class="bio">
+          Uli Hitzel is a hands-on AI technologist and ecosystem builder working at the intersection of artificial intelligence, business transformation, and human creativity. He helps enterprises and startups build with AI rather than just buy it, guiding teams through practical implementation while exploring how AI augments human capabilities across industries.
+        </p>
+      </section>
 
-        <!--<br>&nbsp;<br>
-        <h2>Line</h2>
-        <img src="https://raw.githubusercontent.com/u1i/u1i.github.io/master/line.jpg" border="0">
-        <br>&nbsp;<br>
-        <h2>Wechat</h2>
-        <img src="https://raw.githubusercontent.com/u1i/u1i.github.io/master/wechat2.png" border="0">
-         -->
-      </div>
+      <!-- Areas of interest -->
+      <section class="section">
+        <div class="section-label">Areas of Interest</div>
+        <div class="tags">
+          <span class="tag">Artificial Intelligence</span>
+          <span class="tag">Business Transformation</span>
+          <span class="tag">DevOps</span>
+          <span class="tag">Manufacturing Innovation</span>
+        </div>
+      </section>
 
-    </div><!-- /.container -->
+      <!-- Experience -->
+      <section class="section">
+        <div class="section-label">Experience</div>
+        <ul class="org-list">
+          <li>The HEINEKEN Company</li>
+          <li>Dyson</li>
+          <li>Yahoo</li>
+          <li>Microsoft</li>
+          <li>IBM</li>
+          <li>Red Hat</li>
+          <li>Raffles Medical Group</li>
+        </ul>
+      </section>
 
+      <!-- Links -->
+      <section class="section">
+        <div class="section-label">Links</div>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/uhitzel/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://apigeek.net" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            Portfolio
+          </a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        Singapore
+      </footer>
+
+    </main>
   </body>
 </html>

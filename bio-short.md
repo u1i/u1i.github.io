@@ -1,0 +1,1 @@
+Uli Hitzel is a hands-on AI technologist and ecosystem builder working at the intersection of artificial intelligence, business transformation, and human creativity. He helps enterprises and startups build with AI rather than just buy it, guiding teams through practical implementation while exploring how AI augments human capabilities across industries.
